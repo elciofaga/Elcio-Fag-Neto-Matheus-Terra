@@ -44,7 +44,17 @@
             letter-spacing: 2px;
 
         }
-
+        .LabelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .LabelInput{
+            top: -20p;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
@@ -54,18 +64,18 @@
                 <legend><b>Formulario de Clientes</b></legend>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inpultUser" required>
-                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="LabelInput">Nome Completo</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="email" name="email" id="email" class="inpultUser" required>
-                    <label for="nome">E-mail</label>
+                    <input type="email" name="email" id="email" class="inputUser" required>
+                    <label for="nome" class="LabelInput">E-mail</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="tel" name="tel" id="tel" class="inpultUser" required>
-                    <label for="nome">Telefone</label>
+                    <input type="tel" name="tel" id="tel" class="inputUser" required>
+                    <label for="nome" class="LabelInput">Telefone</label>
                 </div>
                 <br><br>
                 <p>Sexo:</p>
@@ -78,22 +88,22 @@
                 <br><br>
                 <div class="inputBox">
                     <label for="data nascimento"><b>Data de nascimento:</b></label>
-                    <input type="date" name="data nascimento" id="data nascimento" class="inpultUser" required>
+                    <input type="date" name="data nascimento" id="data nascimento" class="inputUser" required>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inpultUser" required>
-                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade"class="LabelInput">Cidade</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="estado" id="estado" class="inpultUser" required>
-                    <label for="estado">Estado</label>
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado"class="LabelInput">Estado</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="endereco" id="endereco" class="inpultUser" required>
-                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco"class="LabelInput">Endereço</label>
                 </div>
                 <br><br>
                 <input type="submit" name="submit" id="submit" >    
