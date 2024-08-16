@@ -82,7 +82,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="">
+        <form action="processar-dados.php" method="post">
              <fieldset>
                 <legend><b>Formulario de Clientes</b></legend>
                 <br>
@@ -129,7 +129,7 @@
                     <label for="endereco"class="LabelInput">Endereço</label>
                 </div>
                 <br><br>
-                <input type="submit" name="submit" id="submit" >    
+                <input type="submit" name="submit" id="submit">
             </fieldset>
         </form>
     </div>
